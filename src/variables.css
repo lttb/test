@@ -1,0 +1,14 @@
+:root {
+    --font-gilroy: 'Gilroy', sans-serif;
+    --royal-blue: #10069f;
+    --dark-cream: #ffe092;
+    --coral: #ef634d;
+    --black-30: rgba(0, 0, 0, 0.3);
+    --black-40: rgba(0, 0, 0, 0.4);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --pale-grey: #f2f4f7;
+    --valid-greed: #8adbb9;
+    --graphite-grey: #4f4f4f;
+    --almost-black: #1D1D1D;
+}
+

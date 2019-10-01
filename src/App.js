@@ -1,7 +1,11 @@
 import React from "react";
 import styled from 'reshadow'
 
+import './App.css';
+
 const Button = ({size, children, ...props}) => styled`
+@import "./variables.css";
+
 button {
     font-size: 16px;
     cursor: pointer;
