@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*noinspection CssInvalidAtRule*/
+@import-normalize;
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Arial Regular'), local('Arial');
+    font-weight: 500;
+    font-style: normal;
+    unicode-range: U+2012;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Arial Italic'), local('Arial');
+    font-weight: 500;
+    font-style: italic;
+    unicode-range: U+2012;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Semibold.woff2') format('woff2'),
+    url('/fonts/Gilroy-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Arial Bold'), local('Arial');
+    font-weight: 600;
+    font-style: normal;
+    unicode-range: U+2012;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-SemiboldItalic.woff2') format('woff2'),
+    url('/fonts/Gilroy-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Arial Bold Italic'), local('Arial');
+    font-weight: 600;
+    font-style: italic;
+    unicode-range: U+2012;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-gilroy);
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+blockquote {
+    margin: 0;
+}
+
+:root {
+    --font-gilroy: 'Gilroy', sans-serif;
+    --royal-blue: #10069f;
+    --dark-cream: #ffe092;
+    --coral: #ef634d;
+    --black-30: rgba(0, 0, 0, 0.3);
+    --black-40: rgba(0, 0, 0, 0.4);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --pale-grey: #f2f4f7;
+    --valid-greed: #8adbb9;
+    --graphite-grey: #4f4f4f;
+    --almost-black: #1D1D1D;
 }

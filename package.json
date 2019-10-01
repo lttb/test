@@ -2,16 +2,20 @@
   "name": "digitalhorizon.ru.cra",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
+  },
   "dependencies": {
+    "@lingui/react": "^2.8.3",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
-    "react-scripts": "3.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
+    "reshadow": "0.0.1-alpha.70"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +31,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@lingui/cli": "^2.8.3",
+    "@lingui/macro": "^2.8.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "customize-cra": "^0.8.0",
+    "postcss-color-function": "^4.1.0",
+    "react-app-rewired": "^2.1.3"
   }
 }

@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from 'reshadow'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Button = ({size, children, ...props}) => styled`
+button {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid;
+    color: rebeccapurple;
+    background: var(--coral);
 }
 
-export default App;
+button[|size='s'] {
+  font-size: 12px;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    opacity: 1;
+
+    & buttonText {
+          pointer-events: none;
+  }
+}
+`(
+    <button {...props} use:size={size}>
+        <buttonText as="span">{children}</buttonText>
+    </button>
+);
+
+export function App() {
+    return <div>Hi
+        <Button size='s'>click me 2</Button>
+    </div>
+}
